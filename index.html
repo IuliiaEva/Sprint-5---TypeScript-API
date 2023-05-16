@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chistes</title>
+  <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size: 32px;">Barcelona</a>
+      <ul class="navbar-nav me-auto flex-row" style="font-size: 24px; text-align: center;">
+        <li class="nav-item mt-3">
+          <a class="nav-link deg">10&deg;</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link character">Character</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+    <div class="position-relative">
+      <svg class="position-absolute start-0 bottom-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 200px; height: 200px; top: 500px; left: 300px;">
+        <path fill="#F2F4F8" d="M65.5,-23.7C71.1,-4.1,52.4,21.1,31.3,34.3C10.3,47.5,-13,48.8,-31.6,36.8C-50.2,24.9,-64.1,-0.2,-58,-20.5C-52,-40.7,-26,-56.1,2,-56.7C30,-57.4,59.9,-43.3,65.5,-23.7Z" transform="translate(100 100)" />
+      </svg>
+      <svg class="position-absolute end-0 top-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 200px; height: 200px; right: 500px;">
+        <path fill="#F2F4F8" d="M65.5,-23.7C71.1,-4.1,52.4,21.1,31.3,34.3C10.3,47.5,-13,48.8,-31.6,36.8C-50.2,24.9,-64.1,-0.2,-58,-20.5C-52,-40.7,-26,-56.1,2,-56.7C30,-57.4,59.9,-43.3,65.5,-23.7Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card p-5 text-center mt-3">
+          <h1 class="card-title" style="margin-top: -20px; margin-bottom: 30px;">Get ready to laugh? &#129315;</h1>
+          <div class="text-center mt-2">
+              <button onclick="nextJoke()" type="button" class="btn btn-primary btn-lg"
+              style="font-size: 26px; text-align: center">Next joke</button>
+          </div>
+          <div id="joke-text"
+            style="font-size: 32px; text-align: center; margin-top: 30px; height: 100px; overflow: auto;">This is the
+            joke text</div>
+          <div class="mt-5 d-flex justify-content-center"> 
+            <span class="col-auto iconos" type="button" onclick="score(1)">😓</span>
+            <span class="col-auto iconos" type="button" onclick="score(2)">😐</span>
+            <span class="col-auto iconos" type="button" onclick="score(3)">😆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
